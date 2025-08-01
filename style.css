@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .phone-layout {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .phone-layout h1 {
+    font-size: 24px;
+  }
+
+  .phone-layout p {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  margin-top: 10px;
+  font-size: 1rem;
+  max-width: 600px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 3s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.card-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.cards-container {
+  z-index: 2;
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 250px;
+  
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 10px;
+  
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.507);
+  color: black;
+  transform: scale(1.05);
+}
+
+.card:hover img {
+  transform:  scale(1.2);
+}
+.third{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.671) ), url(./1.jpg);
+  background-size: cover;
+}
+.bmww {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.541)), url(./4.jpg);
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cantiner {
+    width: 900px;
+    display: flex;
+
+    backdrop-filter: blur(6px) saturate(200%);
+    -webkit-backdrop-filter: blur(6px) saturate(200%);
+    background-color: rgba(250, 250, 250, 0.233);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 10px 32px 0 rgba(31, 42, 196, 0.37);
+    border-radius: 15px;
+    height: 80%;
+}
+
+.ong-sayt {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.ong-sayt>img{
+    width: 430px;
+    margin-left: -10px;
+}
+
+.chap-sayt {
+    width: 50%;
+    height: 100%;
+    color: black;
+    font-size: 18px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.chap-sayt>button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-bottom: 1px;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    background-color: rgb(0, 0, 255);
+    color: #fff;
+}
+
+.chap-sayt>button:hover{
+    transition: all .5s;
+    background-color: rgba(0, 0, 255, 0.658);
+}
+.gap{
+    width: 105%;
+    height: 100vh;
+    background: url("https://www.bmw.in/content/dam/bmw/marketIN/bmw_in/all-models/3-series/M340i/thebmw-m340i-banner-image-1680x756.jpg.asset.1731493944804.jpg");
+   background-size: cover;
+}
+.b{
+    margin-top: -500px;
+}
+.footer {
+  background-color: #1c1e21;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: #4da6ff;
+  text-decoration: none;
+}
+
+.footer .social-icons a {
+  margin-right: 10px;
+  color: white;
+}
